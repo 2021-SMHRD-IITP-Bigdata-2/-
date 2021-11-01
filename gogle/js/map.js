@@ -12,12 +12,12 @@ function initMap() {
         center: gwangju
     });
     
-    // 마커 표시하기
+/*     // 마커 표시하기
     new google.maps.Marker({
         postion = gwangju,
         map,
         title: "Hello World!"
-    });
+    }); */
 }
 
 
