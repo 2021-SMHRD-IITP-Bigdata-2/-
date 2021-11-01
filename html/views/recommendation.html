@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="../css/owl.css">
     <link rel="stylesheet" href="../css/introduction.css">
     <link rel="stylesheet" href="../css/map.css">
-    
+    <script src="../js/header-footer.js" defer type="text/javascript"></script>
+    <script src="../js/map.js"></script>
+    <script src = "https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- region=kr을 추가해주어야 동해로 표기 된다! -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRalWsY3QyTGM1vFQeDpOmoRvXsy9dL8U&callback=initMap&region=kr"></script>
     
     <title>로드</title>
 </head>
@@ -24,16 +28,13 @@
     <div data-include-path="header.html"></div>
     
     <!-- 지도 -->
-    <div class="map"></div>    
-
+    <div class="map" id="map"></div>
+    <!--<iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>-->
 
     <!-- footer -->
     <div data-include-path="footer.html"></div>
 
 </body>
-    <script src="../js/header-footer.js" defer type="text/javascript"></script>
-    <script src="../js/map.js"></script>
-    <script src = "https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <!-- region=kr을 추가해주어야 동해로 표기 된다! -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRalWsY3QyTGM1vFQeDpOmoRvXsy9dL8U&callback=initMap&region=kr"></script>
+
+</script>
 </html>
