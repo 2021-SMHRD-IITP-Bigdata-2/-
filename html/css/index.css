@@ -284,9 +284,9 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     background-color: #A33333;
 }
 
-
 /* 해시태그 */
 .hastage{
+    text-align: center;
     overflow: hidden;
     position:relative;
     width:940px;
@@ -294,91 +294,64 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     margin-top:40px;
 }
 
-/* 광주 해시태그 */
-.hastage .hastagelist-Gwangju{
-    margin-left:-10px;
+button.hastage-gwang{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+    height: 40px;
+    width: 150px;
+    display: inline-block;
+    overflow: hidden;
 }
 
-.hastage .hastagelist-Gwangju li{
-    margin: 0 0 0 10px;
-    float:left;
-    height:50px;
-}
-.hastage .hastagelist-Gwangju li button{
-    width: 120px;
-}
-.hastage .hastagelist-Gwangju li button span:hover{
+button.hastage-gwang:hover{
     background-color:#A33333;
     opacity: 1;
     color:white;
+    border: 1px solid white;
 }
 
-.hastage .hastagelist-Gwangju li button span {
-    width:120px;
-    display:inline-block;
-    overflow:hidden;
-    background:#fff;
+button.active-gwang{
+    background-color:#A33333;
+    opacity: 1;
+    color:white;
+    border: 1px solid white;
+}
+
+.line2{
+    margin-top: 20px;
+}
+
+button.hastage-jeolla{
+    background-color: white;
+    color: black;
+    font-size: 16px;
     text-align: center;
-    font-size:16px;
-    color:black;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 5px;
-}
-
-.hastage .hastagelist-Gwangju li button span{
-    display:inline-block;
-    height:38px;
-    line-height: 38px;
-    padding:0 20px;
-}
-
-/* 전라도 해시태그 */
-.hastage .hastagelist-Jeollado{
-    margin-left:-10px;
-}
-
-.hastage .hastagelist-Jeollado li{
     margin: 0 0 0 10px;
-    float:left;
-    height:50px;
-}
-.hastage .hastagelist-Jeollado li button{
-    width: 120px;
+    height: 40px;
+    width: 150px;
+    display: inline-block;
+    overflow: hidden;
 }
 
-.hastage .hastagelist-Jeollado li button span:hover{
+button.hastage-jeolla:hover{
     background-color:#dbcf60;
     opacity: 1;
     color:white;
+    border: 1px solid white;
 }
 
-.hastage .hastagelist-Jeollado li button span {
-    width:120px;
-    display:inline-block;
-    overflow:hidden;
-    background:#fff;
-    text-align: center;
-    font-size:16px;
-    color:black;
-    border:1px solid black;
-    border-radius: 5px;
-}
-
-.hastage .hastagelist-Jeollado li button span{
-    display:inline-block;
-    height:38px;
-    line-height: 38px;
-    padding:0 20px;
-}
-
-.hastage .inr .btn_more{
-    display:block;
-    position:absolute;
-    bottom:10px;
-    right:0;
-    width:70px;
-    height:40px;
-    text-indent:-9999px;
+button.active-jeolla{
+    background-color:#dbcf60;
+    opacity: 1;
+    color:white;
+    border: 1px solid white;
 }
 
 
