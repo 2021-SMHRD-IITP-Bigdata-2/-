@@ -1,4 +1,10 @@
 
+$(document).ready(function(){
+    $('#myModal').show();
+});
+function close_pop(flag) {
+    $('#myModal').hide();
+}
 // 위치 표기
 var locations = [
     ['동원 게장 백반', 35.1491293, 126.9424985],
@@ -19,10 +25,10 @@ window.onload = function initMap() {
     // 아이콘 이미지 변경
     const icon =  {
         url : '../img/Fin.png',
-        size : new google.maps.Size(40,40),
+        size : new google.maps.Size(50,50),
         origin : new google.maps.Point(0,0),
-        anchor : new google.maps.Point(20,40),
-        scaledSize : new google.maps.Size(40,40),
+        anchor : new google.maps.Point(25,50),
+        scaledSize : new google.maps.Size(50,50),
     };
     
     var infowindow = new google.maps.InfoWindow();

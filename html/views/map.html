@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap icon -->
@@ -18,8 +20,28 @@
     <link rel="stylesheet" href="../css/map.css">
     <title>Gogle_map</title>
 </head>
+
 <body>
-    
+    <!---------------------------------- 게시글 상세보기 모달창 ---------------------------------->
+    <div id="myModal" class="modal">
+        <div class="modal-main">
+            <div class="modal-title">
+                <span class="m-title">
+                    Upload a picture of the food you want to eat
+                </span>
+                <button type="button" class="close" onclick="close_pop()">
+                    <span class="close-i"><i class="fas fa-times fa-fw" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="modal-upload"></div>
+
+            <div class="modal-submit">
+                <button class ="m-submit" type="submit" onclick="close_pop()">전송하기</button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------- 게시글 상세보기 모달창 ---------------------------------->
+
     <!-- 메뉴 -->
     <div data-include-path="header.html"></div>
 
@@ -40,7 +62,8 @@
     <script src="../js/owl-carousel.js"></script>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL8p9j7Ox3DZIPCM1NO_7gC7xFqGTkpgE&region=KR"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL8p9j7Ox3DZIPCM1NO_7gC7xFqGTkpgE&region=KR"></script>
     <script src="../js/map.js"></script>
 
 </body>
