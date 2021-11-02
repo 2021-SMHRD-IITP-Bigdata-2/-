@@ -1,0 +1,642 @@
+#wrapper{
+    width:1320px;
+    margin:0 auto 0 auto;
+    height:800px;
+    position:relative;
+    color:#fff;
+    text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;  
+}
+
+#slider-wrap{
+    width:1320px;
+    height:800px;
+    position:relative;
+    overflow:hidden;
+}
+
+#slider-wrap ul#slider{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;   
+}
+
+#slider-wrap ul#slider li{
+    float:left;
+    position:relative;
+    width:1320px;
+    height:400px; 
+}
+
+#slider-wrap ul#slider li img{
+    display:block;
+    width:100%;
+    margin-bottom:500px;
+    object-fit: cover;
+}
+
+
+/*btns*/
+.btns{
+    position:absolute;
+    width:50px;
+    height:60px;
+    top:50%;
+    margin-top:-25px;
+    line-height:57px;
+    text-align:center;
+    cursor:pointer; 
+    background:rgba(0,0,0,0.1);
+    z-index:100;
+    
+    
+    -webkit-user-select: none;  
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -ms-user-select: none;
+    
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.btns:hover{
+    background:rgba(0,0,0,0.3); 
+}
+
+#next{right:-50px; border-radius:7px 0px 0px 7px;}
+#previous{left:-50px; border-radius:0px 7px 7px 7px;}
+#counter{
+    top: 30px; 
+    right:35px; 
+    width:auto;
+    position:absolute;
+}
+
+#slider-wrap.active #next{right:0px;}
+#slider-wrap.active #previous{left:0px;}
+
+
+/*bar*/
+#pagination-wrap{
+    min-width:20px;
+    margin-top:700px;
+    margin-left: auto; 
+    margin-right: auto;
+    height:15px;
+    position:relative;
+    text-align:center;
+}
+
+#pagination-wrap ul {
+    width:100%;
+}
+
+#pagination-wrap ul li{
+    margin: 0 4px;
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:#fff;
+    opacity:0.5;
+    position:relative;
+    top:0;
+    
+    
+}
+
+#pagination-wrap ul li.active{
+    width:12px;
+    height:12px;
+    top:3px;
+    opacity:1;
+    box-shadow:rgba(0,0,0,0.1) 1px 1px 0px; 
+}
+
+
+
+
+/*Header*/
+h1, h2{text-shadow:none; text-align:center;}
+h1{ color: #666; text-transform:uppercase;  font-size:36px;}
+h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; margin-bottom:30px;} 
+
+
+
+
+/*ANIMATION*/
+#slider-wrap ul, #pagination-wrap ul li{
+    -webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    transition: all 0.3s cubic-bezier(1,.01,.32,1); 
+}
+
+
+/* 두번째 컨텐츠 */
+.second-contents{
+    display:flex;
+    margin:auto;
+    width:1320px;
+    height:400px;
+    flex-direction: row;
+}
+
+.second-contents-left{
+    width: 350px;
+}
+
+.second-contents-left p, span{
+    text-align: left;
+}
+
+.second-contents-left p{
+    font-family:'행복고흥B';
+    font-size:60px;
+    color:black;
+}
+.second-contents-left .second-contents-title span{
+    font-family:'행복고흥B';
+    color:#A33333;
+}
+.second-contents-left .second-contents-text span{
+    color:#666;
+}
+
+.our-portfolio {
+
+    position:relative;
+    overflow:hidden;
+}
+
+.our-portfolio:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 414px;
+    height: 861px;
+    z-index: 1;
+}
+
+.our-portfolio:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 677px;
+    height: 759px;
+    z-index: 1;
+}
+
+.our-portfolio .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 2;
+    visibility: visible;
+}
+
+.our-portfolio .item {
+    margin:auto;
+    width:300px;
+    height:300px;
+    position: relative;
+    z-index: 222;
+}
+
+.portfolio-item {
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    margin: 15px;
+}
+
+.portfolio-item .thumb {
+    position: relative;
+    border-radius: 50px;
+    height: 180px;
+}
+
+
+.portfolio-item:hover .down-content h4,
+.portfolio-item:hover .down-content span {
+    color: #fe664e;
+}
+
+.portfolio-item .thumb img {
+    border-top-right-radius: 23px;
+    border-top-left-radius: 23px;
+    overflow: hidden;
+    height: 180px;
+}
+
+.portfolio-item .down-content {
+    background-color: #fff;
+    text-align: left;
+    padding: 18px 0px;
+    border-bottom-right-radius: 23px;
+    border-bottom-left-radius: 23px;
+    padding-left:30px;
+}
+
+.portfolio-item .down-content span {
+    font-size: 18px;
+    color: #afafaf;
+    transition: all .3s;
+}
+
+.our-portfolio .owl-nav {
+    display: inline-block!important;
+    position: absolute;
+    left:42%;
+    max-width: 1320px;
+}
+
+
+.our-portfolio .owl-nav span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s;
+    margin-top:10px;
+    margin-left:30px;
+}
+
+.our-portfolio .owl-nav span:hover {
+    color: #fff;
+    background-color: #A33333;
+}
+
+/* 해시태그 */
+.hastage{
+    overflow: hidden;
+    position:relative;
+    width:940px;
+    margin:0 auto 30px auto;
+    margin-top:40px;
+}
+
+.hastage .hastagelist{
+    margin-left:-10px;
+}
+
+.hastage .hastagelist li{
+    margin: 0 0 0 10px;
+    float:left;
+    height:50px;
+}
+
+.hastage .hastagelist li a span:hover{
+    background-color:#A33333;
+    opacity: 1;
+    color:white;
+}
+
+.hastage .hastagelist li a span {
+    width:120px;
+    display:inline-block;
+    overflow:hidden;
+    background:#fff;
+    text-align: center;
+    font-size:16px;
+    color:#A33333;
+    border:1px solid #A33333;
+    border-radius: 5px;
+}
+
+.hastage .hastagelist li a span{
+    display:inline-block;
+    height:38px;
+    line-height: 38px;
+    padding:0 20px;
+}
+
+.hastage .inr .btn_more{
+    display:block;
+    position:absolute;
+    bottom:10px;
+    right:0;
+    width:70px;
+    height:40px;
+    text-indent:-9999px;
+}
+
+
+/* 추천서비스 */
+.recommend{
+    margin:0 auto 30px auto;
+    width:1320px;
+    height:496px;
+    background:#fdecec;
+    position:relative;
+}
+.recommend .recommend-title{
+    padding:32px 0 0;
+    position:relative;
+    width:940px;
+    margin:0 auto;
+}
+
+.recommend .recommend-title h2{
+    width:100%;
+    height: 45px;
+    left:0px;
+    font-size:2em;
+}
+
+.recommend .recommend-title h2 a{
+    color:#A33333;
+    display:block;
+    height:30px;
+}
+
+.recommend .recommend-title h2 span{
+    color:#666;
+    font-size:0.5em;
+}
+
+.recommend .recommend-title button{
+    position:absolute;
+    right:0;
+    top:50px;
+    font-size:16px;
+    color: #A33333;
+    appearance: auto;
+    border:0 none;
+    border-bottom: 1px solid #A33333;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+
+.rocommend .recommend-title button:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:1px;
+    background:#333;
+    margin-top:2px;
+}
+
+.recommend .owl-carousel .owl-item{
+    width:230px !important;
+}
+
+.recommend .recommend-contents{
+    margin:30px auto 10px auto;
+    left:30%;
+    height:300px;
+}
+
+.recommend .recommend-contents .row{
+    width:1200px;
+    margin:auto;
+}
+
+.recommend .recommend-contents .portfolio-item{
+    width:200px;
+}
+
+.recommend .recommend-contents .down-content{
+    height:50px;
+    padding:13px 0px;
+    text-align: center;
+}
+
+.recommend .recommend-contents .down-content span{
+    font-size:1em;
+}
+
+.recommend .recommend-contents-wrapper{
+    margin-top:10px;
+    display:flex;
+    position:relative;
+    width:100%;
+    height:100%;
+    z-index:1;
+    justify-content: space-around;
+}
+
+.recommend .recommend-contents-wrapper .recommend-contents-slide{
+    float:left;
+    padding:0 10px;
+    width: 320px !important;
+    height:290px;
+}
+
+.recommend .recommend-contents-wrapper .recommend-contents-slide a{
+    display:block;
+    height:100%;
+    background:#fff;
+    border-radius:20px;
+}
+
+.recommend .recommend-contents-wrapper .recommend-contents-slide a span{
+    height:100%;
+    width:320px;
+    text-align:center;
+}
+
+/* 체험속으로 */
+.box-calendar{
+    width:1000px;
+    margin:0 auto;
+    padding:0 20px 27px;
+}
+
+.box-calendar .calendar-top{
+    position:relative;
+    display:inline-block;
+    margin:0 auto;
+}
+
+.box-calendar .calendar-top .btn-prev{
+    left:-59px;
+}
+
+.box-calendar .calendar-top .title{
+    position:relative;
+    padding:7px 0 19px 0;
+    text-align: center;
+}
+
+.box-calendar .calendar-top .title p{
+    font-size:2em !important;
+    color:#A33333;
+}
+
+.box-calendar .calendar-top .btn-more{
+    position:absolute;
+    top:18px;
+    right:-379px;
+    color:#333;
+    font-size:14px;
+    text-align: center;
+    padding-left:19px;
+}
+
+button{
+    border:0 none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+/* 캘린더 */
+.box-calendar .calendar{
+    margin-top:-3px;
+    border-top: 1px solid #7f7f7f;
+    padding:15px 0 0 ;
+}
+.box-calendar .calendar table td{
+    word-break: normal;
+}
+
+.box-calendar .calendar table td button{
+    display: block;
+    width:31px;
+    height:23px;
+    box-sizing: border-box;
+    font-size:18px;
+    font-weight: 400;
+    color:#333;
+}
+
+.box-calendar .calendar table td.on button{
+    background-color:#dc4405;
+}
+
+.box-calendar .calendar table td button
+.box-calendar .calendar table th, .box-calendar .calendar table td{
+    color:#000;
+    text-align: center;
+}
+
+.box-calendar .calendar .saturday{
+    color:#2a7dee;
+}
+
+.box-calendar .calendar .sunday{
+    color:#dc4405;
+}
+
+/* 캘린더 이미지 */
+
+.box-calendar .calendar-list{
+    width:980px;
+
+}
+.box-calendar .calendar-list .list-calData{
+    margin-top: 21px;
+    text-align: left;
+    overflow: hidden;
+
+}
+.box-calendar .list-calData li{
+    float:left;
+    width:33.3%;
+}
+
+.box-calendar .list-calData li a{
+    display:block;
+    width:300px;
+    padding:20px 20px 0;
+    height:216px;
+    border:1px solid #e6e6e6;
+    border-radius: 10px;
+}
+
+.box-calendar .list-calData li a:hover{
+    background-color:#f7f7f7;
+    border-radius: 10px;
+}
+
+.box-calendar .calendar-list .calendar-img img{
+    display:block;
+    height:120px;
+    width:260px;
+    border-radius:8px;
+    margin:0 0 17px;
+    background-position: 50% 50%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-indent: -9999px;
+}
+
+/* 여행지 사진 추천 */
+
+
+.activity{
+    width:1000px;
+    height:300px;
+    margin:30px auto;
+    padding: 0 20px 27px;
+}
+
+.activity .activity-top{
+    width:1000px;
+    position:relative;
+    display:inline-block;
+    margin:0 auto 20px auto;
+}
+
+.activity .activity-top p{
+    color:#A33333;
+    font-size:2em !important;
+    text-align: center;
+}
+
+.activity .article{
+    width:300px;
+    padding:21px 19px 20px !important;
+    border:1px solid #e6e6e6;
+    border-radius: 10px;
+}
+
+.activity .article:hover{
+    background-color:#f7f7f7;
+    border-radius: 10px;
+}
+
+.activity .article .mdu-imgTitle p{
+    font-size:1em;
+    color:black;
+    text-align: center;
+}
+
+.activity .area-left{
+    float:left;
+    width:300px;
+}
+
+
+.article .mdu-imgTitle .imgView:last-child{
+    margin-bottom: 0;
+}
+
+.article .mdu-imgTitle .imgView{
+    width:100%;
+}
+
+.activity .area-mid{
+    float:left;
+    width:300px;
+    margin-left:30px;
+}
+
+.activity .area-right{
+    float:left;
+    width:300px;
+    margin-left:30px;
+}
+

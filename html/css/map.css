@@ -1,9 +1,10 @@
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.map-content{
+    margin: 10px 300px;
+    height: 800px;
+    background-color: turquoise;
 }
-.map {
-    width: 100%;
+
+.map{
     height: 100%;
+    width: 100%;
 }
