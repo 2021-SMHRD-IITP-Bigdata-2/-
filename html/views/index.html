@@ -146,57 +146,72 @@
     </div>
 
     <div class="line"></div>
-    <!-- 태그 -->
-    <div class="hastage">
-        <div class="line1">
-            <button type="button" class="hastage-gwang">#Donggu</button>
-            <button type="button" class="hastage-gwang">#Seogu</button>
-            <button type="button" class="hastage-gwang">#Bukgu</button>
-            <button type="button" class="hastage-gwang">#Namgu</button>
-            <button type="button" class="hastage-gwang">#Gwangsangu</button>
-            <br/>
-        </div>
-        <div class="line2">
-            <button type="button" class="hastage-jeolla">#Donggu</button>
-            <button type="button" class="hastage-jeolla">#Seogu</button>
-            <button type="button" class="hastage-jeolla">#Bukgu</button>
-            <button type="button" class="hastage-jeolla">#Namgu</button>
-            <button type="button" class="hastage-jeolla">#Gwangsangu</button>
-        </div>  
-    </div>
     <!-- 추천 서비스 -->
     <div class="recommend">
         <div class="recommend-title">
             <h2>
-                <a href="#">Recommendations for Korean Traditional Drinks</a>
-                <span>These Recommendations of drinks are reflected on your personal Bigdata analysis</span>
+                Recommendations for Korean Traditional Drinks
             </h2>
-            <button type="button" onclick="layerPopup.layerShow('curationAreaPop');">location select</button>
+        </div>
+        <!-- 태그 -->
+        <div class="hastage">
+            <div class="line1">
+                <button type="button" class="hastage-gwang">#Donggu</button>
+                <button type="button" class="hastage-gwang">#Seogu</button>
+                <button type="button" class="hastage-gwang">#Bukgu</button>
+                <button type="button" class="hastage-gwang">#Namgu</button>
+                <button type="button" class="hastage-gwang">#Gwangsangu</button>
+                <br/>
+            </div>
+            <div class="line2">
+                <button type="button" class="hastage-jeolla">#Yeosu</button>
+                <button type="button" class="hastage-jeolla">#Gwangyang</button>
+                <button type="button" class="hastage-jeolla">#Suncheon</button>
+                <button type="button" class="hastage-jeolla">#Damyang</button>
+                <button type="button" class="hastage-jeolla">#Hwasun</button>
+            </div>  
         </div>
         <!-- 추천사이트 내용 -->
         <div class="recommend-contents">
             <div class="recommend-contents-wrapper" id="curationlist">
-                <div class="recommend-contents-slide" data-swiper-slide-index="0"><a><img src="../img/index/전라도1.PNG"><span>전라도1</span></sapn></a></div>
-                <div class="recommend-contents-slide" data-swiper-slide-index="0"><a><img src="../img/index/전라도1.PNG"><span>전라도1</span></sapn></a></div>
-                <div class="recommend-contents-slide" data-swiper-slide-index="0"><a><img src="../img/index/전라도1.PNG"><span>전라도1</span></sapn></a></div>
-                <div class="recommend-contents-slide" data-swiper-slide-index="0"><a><img src="../img/index/전라도1.PNG"><span>전라도1</span></sapn></a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="0"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLBQKn6D1k6Nm3TF0ZSuRyJ16XU5HpQ9E4A&usqp=CAU"></div>
+                    <div class="down-content"><span>거목한정식</span><br/><p>광주 남구 구동 37-28</p></div>
+                </a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="1"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbISyk3irLPd_jCb9GyeHdVrJbvrMJm_KGA&usqp=CAU"></div>
+                    <div class="down-content"><span>조선옥</span><br/><p>광주 남구 노대동 528-2</p></div>
+                </a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="2"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38wA-mL0263Lq7v2jtJwO8pW0AdSFo0c8Cw&usqp=CAU"></div>
+                    <div class="down-content"><span>세자매해물칼국수</span><br/><p>광주 남구 방림동 543-1</p></div>
+                </a></div>
+                <div class="recommend-contents-slide" data-swiper-slide-index="3"><a>
+                    <div class="recommend-contents-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhpQEQtwMmokx-0u-j2resUXbAwLJMYucxJg&usqp=CAU"></div>
+                    <div class="down-content"><span>광주곱창</span><br/><p>광주 남구 봉선동 1014-8</p></div>
+                </a></div>
             </div>
         </div>
-            <!-- 만들고 싶었던 슬라이드 -->
-            <div class="page">
-                <div class="recommend-contentsbar">
-                    <span class=""></span>
-                </div>
-                <div class="recommend-button-prev" tabindex="0" role="button" aria-label="Previous slide">pre</div>
-                <div class="recommend-button-next" tabindex="0" role="button" aria-label="Next slide">next</div>
-                <div class="recommend-pagenume"><strong>1</strong>/<span>10</span></div>
-                <span class="recommend-notification" aria-live="assertive" aria-atomic="true"></span>
-            </div>
-        </div>
-        <div class="recommend-wrapper" id="curationlist">
+        <!-- 만들고 싶었던 슬라이드 -->
+        <div class="owl-nav disabled">
+            <button type="button" role="presentation" class="owl-prev">
+                <span aria-label="Previous">‹</span>
+            </button>
+            <button type="button" role="presentation" class="owl-next">
+                <span aria-label="Next">›</span>
+            </button>
 
         </div>
-        <div class="recommend-photo"></div>
+
+        <!--
+        <div class="page">
+            <div class="recommend-contentsbar">
+                <button type="button" onclick="" class="btn-prev"><span class="ico">pre</span></button>
+                <div class="recommend-pagenume"><strong>1</strong>/<span>10</span></div>
+                <button type="button" onclick="" class="btn-next"><span class="ico">nex</span></button>
+            </div>
+        </div>
+        -->
     </div>
 
     <!-- 체험속으로  -->
