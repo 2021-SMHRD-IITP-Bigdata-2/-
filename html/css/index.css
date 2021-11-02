@@ -160,9 +160,13 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     font-size:60px;
     color:black;
 }
-.second-contents-left .second-contents-title span{
+.second-contents-left .second-contents-title .gangju{
     font-family:'행복고흥B';
     color:#A33333;
+}
+.second-contents-left .second-contents-title .jeolla-do{
+    font-family:'행복고흥B';
+    color:#dbcf60;
 }
 .second-contents-left .second-contents-text span{
     color:#666;
@@ -242,6 +246,7 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     border-bottom-right-radius: 23px;
     border-bottom-left-radius: 23px;
     padding-left:30px;
+    padding-right:30px;
 }
 
 .portfolio-item .down-content span {
@@ -249,6 +254,7 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     color: #afafaf;
     transition: all .3s;
 }
+
 
 .our-portfolio .owl-nav {
     display: inline-block!important;
@@ -278,6 +284,7 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     background-color: #A33333;
 }
 
+
 /* 해시태그 */
 .hastage{
     overflow: hidden;
@@ -287,35 +294,77 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     margin-top:40px;
 }
 
-.hastage .hastagelist{
+/* 광주 해시태그 */
+.hastage .hastagelist-Gwangju{
     margin-left:-10px;
 }
 
-.hastage .hastagelist li{
+.hastage .hastagelist-Gwangju li{
     margin: 0 0 0 10px;
     float:left;
     height:50px;
 }
-
-.hastage .hastagelist li a span:hover{
+.hastage .hastagelist-Gwangju li button{
+    width: 120px;
+}
+.hastage .hastagelist-Gwangju li button span:hover{
     background-color:#A33333;
     opacity: 1;
     color:white;
 }
 
-.hastage .hastagelist li a span {
+.hastage .hastagelist-Gwangju li button span {
     width:120px;
     display:inline-block;
     overflow:hidden;
     background:#fff;
     text-align: center;
     font-size:16px;
-    color:#A33333;
-    border:1px solid #A33333;
+    color:black;
+    border:1px solid black;
     border-radius: 5px;
 }
 
-.hastage .hastagelist li a span{
+.hastage .hastagelist-Gwangju li button span{
+    display:inline-block;
+    height:38px;
+    line-height: 38px;
+    padding:0 20px;
+}
+
+/* 전라도 해시태그 */
+.hastage .hastagelist-Jeollado{
+    margin-left:-10px;
+}
+
+.hastage .hastagelist-Jeollado li{
+    margin: 0 0 0 10px;
+    float:left;
+    height:50px;
+}
+.hastage .hastagelist-Jeollado li button{
+    width: 120px;
+}
+
+.hastage .hastagelist-Jeollado li button span:hover{
+    background-color:#dbcf60;
+    opacity: 1;
+    color:white;
+}
+
+.hastage .hastagelist-Jeollado li button span {
+    width:120px;
+    display:inline-block;
+    overflow:hidden;
+    background:#fff;
+    text-align: center;
+    font-size:16px;
+    color:black;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.hastage .hastagelist-Jeollado li button span{
     display:inline-block;
     height:38px;
     line-height: 38px;
