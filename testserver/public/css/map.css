@@ -1,6 +1,7 @@
 .map-content{
-    margin: 10px 300px;
-    height: 1000px;
+    margin: 10px auto 0 auto;
+    width:1800px;
+    height: 900px;
 }
 
 .map{
@@ -149,10 +150,103 @@
     border: 1px solid white;
 }
 
+
+
+
+/* 옆에 하는거 한번 시도해봄 */
+.map-content-right{
+    display:none;
+    top: 0;
+    left: -30%; /* 너비 300px 인 사이드바를 왼쪽으로 300px 이동시켜 화면에 보이지 않게 함 */
+    z-index: 400;
+    overflow: auto;
+    width: 300px; /* 너비 */
+    height: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition: left .3s ease-in-out; /* 0.3초 동안 이동 애니메이션 */
+    background-color: #f0f0f0;
+}
+
+.map-content-right-content{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    min-width:390px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%), 5px 0 15px 0 rgb(0 0 0 / 10%);
+    transition: left .3s ease-in-out; /* 0.3초 동안 이동 애니메이션 */
+}
+
+
+.map-content-right-btn-map{
+    text-align: right;
+    position:relative;
+    display: block;
+    top: 500px;
+    z-index: 500;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    background-color: white;
+    border: 0;
+}
+
+/*
+.map-content-right-btn{
+    text-align: right;
+    display: block;
+    top: 300px;
+    left: 15px;
+    z-index: 500;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 0;
+}
+*/
+
+.map-content-right-btn i{
+    font-size: 2em;
+}
+
 #label-container{
-    background-color: antiquewhite;
-    height: 100px;
-    width: 100px;
+    margin:20px auto 0 auto;
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
     color: black;
     font-size: 50pt;
 }
+
+#dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+/* 테스트 */
+
+
+input[id="map-content-right-btn"]{
+    display: none;
+}
+input[id="map-content-right-btn"]+label{
+    display: block;
+    top: 300px;
+    left: 15px;
+    z-index: 500;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 0;
+    
+}
+input[id="map-content-right-btn"]+

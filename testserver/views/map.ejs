@@ -128,12 +128,28 @@
 
     <!-- 메뉴 -->
     <div data-include-path="header.html"></div>
-
-    <div class="predict-result" id="label-container"></div>    
     
     <div class="map-content">
+        <button class="map-content-right-btn-map" id="map-content-right-btn-map">
+            <i class="bi bi-chevron-right"></i>
+        </button>
         <div class="map"></div>
+        <div class="map-content-right" id="map-content-right">
+            <div class="map-content-right-content">
+                <input type="checkbox" id="map-content-right-btn">
+                <label for="map-content-right-btn">
+                    <button class="map-content-right-btn">
+                        <i class="fas fa-times fa-fw" aria-hidden="true"></i>
+                    </button>
+                </label>
+                <div class="sidebar">
+                    <!-- 결과 -->
+                    <div class="predict-result" id="label-container"></div>    
+                </div>
+            </div>
+        </div>
     </div>
+    
 
     <!-- footer -->
     <div data-include-path="footer.html"></div>
