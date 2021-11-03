@@ -1,7 +1,6 @@
 .map-content{
     margin: 10px 300px;
-    height: 900px;
-    background-color: turquoise;
+    height: 1000px;
 }
 
 .map{
@@ -18,19 +17,22 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow-y: hidden;  /*Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
     
 /* Modal Content/Box */
 .modal-main {
+    
     background-color: #fefefe;
-    margin: 200px auto; /* 15% from the top and centered */
+    margin: auto; /* 15% from the top and centered */
+    margin-top: 200px;
     border: 1px solid #888;
     width: 1200px;
     height: 700px; /* Could be more or less, depending on screen size */                          
 }
+
 
 .modal-title{
     margin: 40px auto;
@@ -39,7 +41,7 @@
 }
 
 .m-title{
-    font-family: 행복고흥m;
+    font-family: 정속언해m;
     font-weight: bolder;
     font-size: 30pt;
     color : #43191E;
@@ -71,7 +73,59 @@
     margin: 30px auto;
     width: 90%;
     height: 400px;
-    background-color: yellow;
+    text-align: center;
+}
+
+.hidden-input{
+    display: none;
+}
+
+.browse-btn{
+    border-radius: 5px;
+    border: 3px solid #43191E;
+    border-style: dashed;
+    width: 600px;
+    height: 400px;
+    font-size: 30pt;
+    color: #43191E;
+}
+
+.browse-btn:hover{
+    background-color:#A33333;
+    color:white;
+    border: 1px solid white;
+}
+
+.file-upload-content{
+    display: none;
+    text-align: center;
+}
+
+.img-size{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+
+.file-upload-image{
+    height: 100%;
+    width: 100%;
+}
+
+.remove-image{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px dashed #43191E;
+    width: 100px;
+    height: 30px;
+    font-size: 15pt;
+    color: #43191E;
+}
+
+.remove-image:hover{
+    background-color:#A33333;
+    color:white;
+    border: 1px solid white;
 }
 
 .modal-submit{
@@ -93,4 +147,12 @@
     background-color:#A33333;
     color:white;
     border: 1px solid white;
+}
+
+#label-container{
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100px;
+    color: black;
+    font-size: 50pt;
 }
