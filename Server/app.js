@@ -3,6 +3,53 @@ const server = express();
 const path = require('path');
 const mysql = require("mysql");
 const dotenv = require('dotenv');
+const cors = require('cors')
+const bodyParser = require('body-parser')
+
+
+server.use(cors());
+
+// server.use(express.urlencoded({ extended: true }));
+server.use(express.json());
+server.use(bodyParser.urlencoded({extended: true}));
+
+// server.post('/test',(req,res)=>{
+//     sqlInsert = 'INSERT INTO users SET ?'
+//     db.query(sqlInsert,1,(err,result)=>{
+//         console.log(result)
+//         // res.json(result)
+//     })
+// });
+
+
+//회원가입
+server.post("/join", (req, res) => {
+
+    console.log(req.body)
+    const sqlInsert =
+        "INSERT INTO users ( user_id, user_pwd, user_name, user_nick, user_phone, user_national, user_img ) VALUES (? ,? ,?, ?, ?, ?, ?)";
+    db.query(sqlInsert,[req.body.user_id, req.body.user_pwd, req.body.user_name, req.body.user_nick, req.body.user_phone, req.body.user_national, req.body.user_img] ,(err, result) => {
+        if (err) console.log(err);
+        res.json(result);
+
+        // console.log(result);
+    });
+
+});
+
+
+// // get 방식
+// server.get("/join123", (req, res) => {
+//     // console.log(req.body)
+//     const sqlSelect =
+//         "SELECT * FROM testtable";
+//     db.query(sqlSelect ,(err, result) => {
+//         if (err) console.log(err);
+//         console.log(result)
+//         res.json(result);
+//     });
+// });
+
 
 
 
@@ -41,15 +88,15 @@ db.connect( (error) => {
 
 
 
-server.get("/", (req, res) => {
+// server.get("/login", (req, res) => {
+//
+//     res.sendFile(__dirname + "/public/login.html")
+// });
 
-    res.sendFile(__dirname + "/public/login.html")
-});
-
-server.get("/register", (req, res) => {
-
-    res.sendFile(__dirname + "/public/join.html")
-});
+// server.get("/register", (req, res) => {
+//
+//     res.sendFile(__dirname + "/public/join.html")
+// });
 
 
 // Define Routes
