@@ -730,6 +730,13 @@ button{
     height:150px;
     line-height: 150px;
 }
+
+
+.article .imgView img{
+    width:100%;
+    height:100%;
+}
+
 .activity .area-mid{
     float:left;
     width:300px;
