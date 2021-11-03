@@ -77,7 +77,6 @@ async function predict() {
     labelContainer.innerHTML = prediction[max].className;
 
     $('#myModal').hide();
-
 }
 
 // 위치 표기
