@@ -64,6 +64,17 @@ app.get('/protectedroute', (req, res) => {
     res.render('protectedroute');
 });
 
+app.get('/map', (req, res) => {
+    let user = req.user;
+    res.render('map', {user});
+});
+
+app.get('/drink', (req, res) => {
+    let user = req.user;
+    res.render('drink', {user});
+});
+
+
 function checkAuthenticated(req, res, next){
 
     let token = req.cookies['session-token'];
