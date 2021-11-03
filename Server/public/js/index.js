@@ -194,8 +194,21 @@ function swiperTabindex(target, activeIndex){
 }
 
 // 해시태그
+$('button.hastage-gwang').click(function(){
+  if($(this).hasClass("active-gwang")){
+      $(this).removeClass("active-gwang");
+  }else{
+      $(this).addClass("active-gwang");  
+  }
+});
 
-
+$('button.hastage-jeolla').click(function(){
+  if($(this).hasClass("active-jeolla")){
+      $(this).removeClass("active-jeolla");
+  }else{
+      $(this).addClass("active-jeolla");  
+  }
+});
 
 // 달력
 function getSigungu() {
