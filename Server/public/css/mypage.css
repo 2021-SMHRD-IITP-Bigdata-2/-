@@ -118,6 +118,7 @@
 }
 
 .page-body-wrapper .row .card img{
+    height: 250px;
     border-radius: 20px;
 }
 
