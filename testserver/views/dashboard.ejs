@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-
-    <a href="/logout">Sign Out</a>
-    <h1>Hi <%= user.name %></h1>
-
-    <img src="<%= user.picture %>" alt="">
+    <ul>
+        <%= users.forEach(function(user){ %>
+          <%= include('user/show', {user: user}); %>
+        <%= }); %>
+      </ul>
 
 
 </body>

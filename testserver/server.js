@@ -2,6 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const app = express();
 const path = require('path');
+const expressLayouts = require('express-ejs-layouts');
 // Google Auth
 const {OAuth2Client} = require('google-auth-library');
 const CLIENT_ID = '328822197094-khiejtot9evtjn0tmd24b3ppo14io05e.apps.googleusercontent.com'
@@ -101,11 +102,21 @@ function checkAuthenticated(req, res, next){
 
 }
 
+// 공통부분 레이아웃 가져오기
+app.use(expressLayouts);
+
+app.set('layout','layout');
+app.set('layout extractScripts', true);
+
+
+
 app.get('/protectedroute', (req, res) => {
     res.render('protectedroute');
 });
 
-
+app.get('/drink', (req, res) => {
+    res.render('drink');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

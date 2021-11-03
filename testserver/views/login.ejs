@@ -49,7 +49,7 @@
             <div class="social-menu">
                 <ul class="social">
                     <li><i class="bi bi-facebook"></i></li>
-                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        <div class="g-signin2 google-login" data-onsuccess="onSignIn"></div>
                     <li><i class="bi bi-twitter"></i></li>
                 </ul>
 
@@ -70,8 +70,6 @@
 
 
 
-
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
     <!-- <a href="#" onclick="signOut();">Sign out</a> -->
     <script>
@@ -103,7 +101,7 @@
             }
         };
         xhr.send(JSON.stringify({token : id_token}));
-      }
+}
     </script>
 
 </body>
