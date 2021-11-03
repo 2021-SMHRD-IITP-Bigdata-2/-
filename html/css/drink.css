@@ -1,0 +1,115 @@
+.intro-content .container .row img{
+    height:200px !important; 
+}
+
+.search{
+    display: flex;
+    margin:25px auto 0 auto;
+    padding-top:25px;
+    padding-left:20px;
+    width: 1320px;
+}
+
+.search input{
+    margin-left:10px;
+    padding: 0 50px 0 20px;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    width: 600px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(206, 206, 206);
+    outline: none;
+    border-radius: 10px;
+}
+
+.search .btn_search{
+    position: relative;
+    top: 12px;
+    right: 37px;
+    width: 24px;
+    height: 24px;
+}
+
+.oo{
+    width:800px;
+}
+
+.mbti{
+    margin-top:3px;
+    width:50px;
+    height:40px;
+    border: 1px solid #a33333;
+    border-radius: 20%;
+    padding-left:7px;
+    padding-top:5px;
+}
+
+.mbti .btn-more{
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+
+.drink-rank{
+    width:1320px;
+    height:500px;
+    padding-top:5px;
+    margin:10px auto 0 auto;
+
+}
+.drink-rank ul{
+    display:flex;
+    margin-top:30px;
+    justify-content: space-evenly;
+}
+.drink-rank ul li{
+    padding:10px 0 10px 0;
+    width:230px;
+    height:400px;
+    background-color: white;
+    border-radius: 5%;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.drink-rank .rank-photo img{
+    margin-left:1px;
+    margin-right:1px;
+    width:226px;
+}
+
+.drink-rank .rank-text{
+    padding: 10px 5px 0 5px;
+}
+
+.drink-rank .rank-text .rank-text-title{
+    height:70px;
+    padding-top:10px;
+    text-align: center;
+}
+
+.drink-rank .rank-text .rank-text-title p{
+    font-size: 1.1em;
+    color:black;
+}
+
+.drink-rank .rank-text .rank-text-star{
+    text-align: center;
+}
+
+.drink-rank .rank-text .rank-text-star i{
+    color:#a33333;
+}
+
+
+/* 랭크 이동 */
+.rank{
+    margin-top:-10px;
+    margin-bottom: 10px;
+    width:100%;
+    height:50px;
+    text-align: center;
+    font-family: "행복고흥B";
+    font-size: 60px;
+}
