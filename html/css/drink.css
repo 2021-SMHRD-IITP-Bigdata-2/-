@@ -116,12 +116,11 @@
 
 /* 드링크 */
 .drink-all{
+    border-top:1px solid #a33333;
     margin: 0 auto;
     width:1320px;
-    height:500px;
 }
 .drink{
-    border-top:1px solid #eee;
     border-bottom:1px solid #eee;
     width:1300px;
     height:100px;
@@ -182,8 +181,10 @@
 
 /* 버튼 */
 .drink-button{
+    border-top:1px solid #a33333;
     width:1320px;
     margin:0 auto;
+    padding-top:30px;
 }
 .drink-button ul{
     display:flex;
