@@ -162,6 +162,7 @@
 .drink-raw + div{
     display:flex;
     font-size:16px;
+    text-align: center;
 }
 
 .drink-raw + div span{
