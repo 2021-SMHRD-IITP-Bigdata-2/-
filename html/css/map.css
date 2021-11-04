@@ -209,11 +209,12 @@ input[id="map-content-left-btn"]:checked + label + div{
 /* 조사된 음식 명 */
 #label-container{
     margin:20px auto 0 auto;
-    border: 1px solid black;
+    border-bottom: 1px solid #eee;
     height: 50px;
-    width: 300px;
+    width: 500px;
     color: black;
-    font-size: 50pt;
+    font-size: 20pt;
+    text-align: center;
 }
 
 /* 사진 */
