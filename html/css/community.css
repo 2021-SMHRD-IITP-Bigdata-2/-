@@ -20,6 +20,29 @@ a:hover, a:focus{
   margin-right: -15px;
   margin-left: -15px; }
 
+/* 글쓰기 버튼*/
+.community-write-btn{
+  margin:10px auto;
+  width:1300px;
+  text-align: right;
+}
+.community-write-btn button{
+  width:70px;
+  padding:5px;
+  margin-right:5px;
+  background-color:white;
+  border:2px solid #a33333;
+  border-radius: 10%;
+  font-size:21px;
+  font-weight: bold;
+  color:#a33333;
+}
+.community-write-btn button:hover{
+  background-color: #a33333;
+  color:white;
+}
+
+/* 원래 있던 템플릿 */
 .blog-entry{
   background-color:white;
   margin-bottom: 30px;
@@ -49,8 +72,7 @@ a:hover, a:focus{
   margin:0 auto 0 auto;
   padding:20px 0 0 0;
   position:relative;
-  height:800px;
-  overflow: scroll;
+  height:1300px;
 }
 
 .text{
@@ -83,44 +105,55 @@ a:hover, a:focus{
 
 
 /* 아래 페이지 버튼 */
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-  .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0; }
 
-    
-.block-27 ul {
-  padding: 0;
-  margin: 0; }
-
-.block-27 ul li {
-  display: inline-block;
-  margin-bottom: 4px;
-  font-weight: 400; }
-  
-.block-27 ul li a, .block-27 ul li span {
-  border: 1px solid #a33333;
-  text-align: center;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%; }
-
-.block-27 ul li.active a, .block-27 ul li.active span {
-  background: #a33333;
-  color: #fff;
-  border: 1px solid transparent; }
-
-.block-27 a{
-  color:#a33333 !important;
-  font-weight: 400;
-  font-size:20px;
+/* 버튼 */
+.drink-button{
+  width:1320px;
+  margin:0 auto;
+  padding-top:30px;
 }
-    
+.drink-button ul{
+  display:flex;
+  justify-content: center;
+}
+.drink-button ul li{
+  margin-left:5px;
+  margin-right:5px;
+  width:30px;
+  height:30px;
+  border:1px solid #a33333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size:16px;
+  cursor: pointer;
+}
+
+.drink-button a{
+  padding:10px;
+}
+
+.drink-button ul li:hover{
+  background-color: #a33333;
+}
+
+.drink-button a{
+  color:black !important;
+}
+
+.drink-button a:hover{
+  color:white !important;
+
+}
+.drink-button .active{
+  background-color: #a33333;
+}
+.drink-button .active span{
+  color:white;
+}
+
+
+
 
 
     
@@ -148,3 +181,77 @@ a:hover, a:focus{
   bottom:0;
 }
 
+
+
+/* 커뮤니티 글쓰기 */
+.community-form{
+  margin:50px auto;
+  width:1000px;
+  height:800px;
+  display: flex;
+  flex-direction: column;
+}
+.community-form > div{
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:16px;
+}
+.community-form > div > div{
+  float:left;
+  width:100px;
+  height:50px;
+  line-height: 50px;
+  font-size:24px;
+  text-align: center;
+}
+.community-title{
+  border-bottom: 1px solid #eee;
+}
+.community-title input{
+  float:left;
+  height:50px;
+  width:900px;
+  padding-left:20px;
+}
+.community-user{
+  border-bottom: 1px solid #eee;
+}
+.community-user input{
+  float:left;
+  height:50px;
+  width:900px;
+  padding-left:20px;
+}
+.community-img input{
+  float:left;
+  margin-top:10px;
+  height:50px;
+  width:500px;
+  line-height: 30px;
+}
+.community-content textarea{
+  width:1000px;
+  height:500px;
+  padding-left:20px;
+}
+/* 글쓰기 버튼 */
+
+.community-button{
+  text-align: right;
+}
+
+.community-button button{
+  width:70px;
+  padding:5px;
+  margin-right:5px;
+  background-color:white;
+  border:2px solid #a33333;
+  border-radius: 10%;
+  font-size:21px;
+  font-weight: bold;
+  color:#a33333;
+}
+.community-button button:hover{
+  background-color: #a33333;
+  color:white;
+}

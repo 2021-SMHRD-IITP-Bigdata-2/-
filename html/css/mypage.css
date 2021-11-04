@@ -139,6 +139,46 @@
     background-color: rgba(184, 54, 54, 0.33);
 }
 
+/* 본인이 쓴 게시글 */
+
+
+.my-list{
+    background-color:#eee;
+}
+
+.community{
+    margin:0 auto 20px auto;
+    background-color: white;
+    border: 1px solid #a33333;
+    width:700px;
+    height:500px;
+    border-radius: 5%;
+}
+.community-title{
+    margin-top:20px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #a33333;
+    font-size:24px !important;
+}
+.community-img{
+    margin:10px auto;
+    width:500px;
+    height:300px;
+}
+.community-img img{
+    width:500px;
+    height:300px;
+}
+.community-content{
+    margin-top:30px;
+    margin-left:50px;
+    color:black;
+    text-align: left;
+
+}
+
+
+
 /* 회원정보 수정 */
 .join-form{
     display: flex;
