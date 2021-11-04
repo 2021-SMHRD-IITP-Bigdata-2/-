@@ -162,15 +162,16 @@ div[class="map-content"]{
     position:relative;
 }
 
+
 input[id="map-content-left-btn"]{
     display: none;
 }
 input[id="map-content-left-btn"]+label{
     display: block;
-    position:relative;
-    top: -900px;
+    position: relative;
+    top: -500px;
     left: 0px;
-    z-index: 1;
+    z-index: 500;
     width: 45px;
     height: 45px;
     padding: 5px;
@@ -189,7 +190,7 @@ input[id="map-content-left-btn"]:checked + label{
 }
 div[class="map-content-left-content"]{
     top: 0px;
-    left: -1500px; /* 너비 300px 인 사이드바를 왼쪽으로 300px 이동시켜 화면에 보이지 않게 함 */
+    left: -800px; /* 너비 300px 인 사이드바를 왼쪽으로 300px 이동시켜 화면에 보이지 않게 함 */
     z-index: 1;
     width: 500px; /* 너비 */
     height: 900px;
@@ -238,36 +239,34 @@ div[class="restaurant"]{
 }
 
 div[class="restaurant-content"]{
-    padding-top:5px;
-    border-radius: 5%;
+    border: 1px solid black;
     width:230px;
     height:230px;
-    opacity: 0.8;
-}
-div[class="restaurant-content"]:hover{
-    opacity: 1;
 }
 div[class="restaurant-content-img"]{
+    border: 1px solid black;
     margin: 5px auto 0 auto;
     width:220px;
-    height:125px;
-}
-div[class="restaurant-content-img"] img{
-    width:218px;
     height:125px;
 }
 
 div[class="restaurant-content-restname"]{
-    margin: 10px auto 0 auto;
+    border: 1px solid black;
+    margin: 1px auto 0 auto;
     width:220px;
-    height:20px;
-    font-size: 1.3em;
+    height:30px;
 }
-
 div[class="restaurant-content-restaddr"]{
-    margin: 5px auto 0 auto;
+    margin: 1px auto 0 auto;
+    border:1px solid black;
+    width: 220px;
+    height:50px;
+}
+div[class="restaurant-content-restaddr"]{
+    border:1px solid black;
+    margin: 1px auto 0 auto;
     width:220px;
-    height:20px;
+    height:30px;
 }
 div[class="restaurant-content-restaddr"] + div{
     margin: 1px auto 0 auto;
@@ -276,24 +275,31 @@ div[class="restaurant-content-restaddr"] + div{
     justify-content: center;
 }
 div[class="restaurant-content-resttel"]{
+    border:1px solid black;
     width:180px;
     height:30px;
 }
 div[class="restaurant-content-restscore"]{
+    border:1px solid black;
     width:40px;
     height:30px;
 }
 
-
 /* 컨텐츠 클릭해서 옆에 다시 뜨는거 */
 /* 옆에 뜨는거 테스트 */
 
-input[id="restaurant-content-btn"]{
-    display: none;
+div[class="restaurant-content-detail"]{
+    position:relative;
 }
+input[id="restaurant-content-btn"]{
 
+}
 input[id="restaurant-content-btn"] + label{
     cursor:pointer;
+}
+input[id="restaurant-content-btn"]:checked ~ .restaurant-content{
+    background-color: #43191E;
+    
 }
 input[id="restaurant-content-btn"]:checked ~ .map-cotent-left-btn-ya{
     z-index:2;
@@ -301,208 +307,12 @@ input[id="restaurant-content-btn"]:checked ~ .map-cotent-left-btn-ya{
 }
 div[class="restaurant-content-detail"]{
     top: 0px;
-    left: -1000px; /* 너비 300px 인 사이드바를 왼쪽으로 300px 이동시켜 화면에 보이지 않게 함 */
+    left: 0px; /* 너비 300px 인 사이드바를 왼쪽으로 300px 이동시켜 화면에 보이지 않게 함 */
     z-index: 156;
     width: 500px; /* 너비 */
     height: 900px;
     position:absolute;
     box-sizing: border-box;
-    background-color:white;
-    border: 1px solid #888;
+    background-color: #A33333;
     transform: all .35s;
-}
-input[id="restaurant-content-btn"]:checked ~ .restaurant-content-detail{
-    z-index:2;
-    left:500px;
-}
-
-.restaurant-content-detail .restaurant-content-img{
-    margin:7px auto 0 auto;
-    width:480px;
-    height:375px;
-}
-
-.restaurant-content-detail .restaurant-content-img img{
-    width:480px;
-    height:375px;
-}
-
-/* 상세화면 */
-div[class="tag-content"]{
-    padding-top:5px;
-    width:500px;
-}
-input[type="radio"]{
-    display: none;
-}
-input[type="radio"] + label{
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    display: inline-block;
-    width:155px;
-    height:40px;
-    margin-top:10px;
-    margin-left:5px;
-    padding:10px auto 0px auto;
-    color:#000;
-    background:white;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-}
-input[type="radio"]:checked + label{
-    border-bottom: 1px solid #A33333;
-    color:#A33333;
-}
-input[type="radio"] + label{
-    border-bottom: 1px solid #eee;
-
-}
-
-.conbox {
-    width:480px;
-    height:600px;
-    margin:0;
-    display: none;
-}
-
-/*  홈 */
-input[id="tab01"]:checked ~ .con1{
-    display: block;
-}
-
-.restaurant-content-detail .restaurant-content-name{
-    border-bottom: 1px solid #eee;
-    margin-top:10px;
-    line-height: 80px;
-    width:500px;
-    height:80px;
-    text-align: center;
-    font-size: 2em;
-}
-.restaurant-content-detail .restaurant-content-addr{
-    border-bottom: 1px solid #eee;
-    line-height: 50px;
-    padding-left:30px;
-    width:500px;
-    height:50px;
-    text-align: left;
-}
-
-.restaurant-content-detail .restaurant-content-tel{
-    border-bottom: 1px solid #eee;
-    line-height: 50px;
-    padding-left:30px;
-    width:500px;
-    height:50px;
-    text-align: left;
-}
-.restaurant-content-detail .restaurant-content-time{
-    border-bottom: 1px solid #eee;
-    line-height: 50px;
-    padding-left:30px;
-    width:500px;
-    height:50px;
-    text-align: left;
-}
-.restaurant-content-detail .restaurant-content-score{
-    border-bottom: 1px solid #eee;
-    line-height: 50px;
-    padding-left:30px;
-    width:500px;
-    height:50px;
-    text-align: left;
-}
-.restaurant-content-detail span{
-    padding-left:10px;
-}
-
-/* 메뉴 */
-input[id="tab02"]:checked ~ .con2{
-    display: block;
-}
-.restaurant-content-detail .menu1{
-    border-bottom: 1px solid #eee;
-    line-height: 80px;
-    padding-left:30px;
-    width:500px;
-    height:80px;
-    font-size:18px;
-    text-align: left;
-}
-.restaurant-content-detail .menu1 span{
-    margin-right:50px;
-    float: right;
-    font-size:16px;
-}
-.restaurant-content-detail .menu2{
-    border-bottom: 1px solid #eee;
-    line-height: 80px;
-    padding-left:30px;
-    width:500px;
-    font-size:18px;
-    height:80px;
-    text-align: left;
-}
-.restaurant-content-detail .menu2 span{
-    margin-right:50px;
-    font-size:16px;
-    float: right;
-}
-
-/* 리뷰 */
-input[id="tab03"]:checked ~ .con3{
-    display: block;
-}
-
-.review{
-    display:flex;
-    flex-direction: column;
-}
-
-.review .review-score{
-    margin-top:10px;
-    width:500px;
-    height:100px;
-    text-align: center;
-    border-bottom:1px solid #eee;
-}
-
-.review .review-score i{
-    color:#A33333;
-    font-size:2em;
-}
-.review .review-score span{
-    font-size:2em;
-    color:#A33333;
-}
-
-.review .review-write{
-    width:500px;
-    height:60px;
-    display: flex;
-    padding-top:15px;
-    border-bottom:1px solid #eee;
-    justify-content: space-between;
-}
-
-.review .review-write span{
-    margin-left:20px;
-    font-size:21px;
-}
-
-.review .review-write button{
-    border:1px solid black;
-    width:60px;
-    height:30px;
-    margin-right:40px;
-    text-align: center;
-    line-height: 30px;
-    font-size:16px;
-    border-radius: 5%;
-}
-.review .review-write button:hover{
-    background-color:#A33333;
-    color:white;
-    cursor: pointer;
 }

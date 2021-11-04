@@ -124,5 +124,3 @@ window.onload = function initMap() {
         })(marker, i));
     }
 }
-
-/*버튼*/

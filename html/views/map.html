@@ -18,10 +18,81 @@
     <link rel="stylesheet" href="../css/owl.carousel.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Gogle_map</title>
 </head>
 
 <body>
+    <!---------------------------------- 헤더 ---------------------------------->
+
+    <!-- 로딩창 -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </div>
+
+    <div class="pre-header">
+        <div class="container">
+        <div class="row" style="flex-wrap:nowrap;">
+            <div class="col-lg-9 col-sm-9 col-7">
+            <setion class="top_01">
+                <!-- 자바 스크립트로 현재 시간 출력 하는 곳 -->
+                <span class="data" onload="clock()"></span>
+                <span>Seoul&nbsp;</span>
+                <span>Korea</span>
+            </setion>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-5">
+            <ul class="social-media">
+                <li class="pre-header-menu1"><i class="bi bi-person-circle"></i><a href="login.html">LOGIN</a></li>
+                <li class="pre-header-menu2"><i class="bi bi-map"></i><a href="#">INTERACTIVE_MAP</a></li>
+                <!-- 언어 선택 -->
+                <select class="select-box">
+                    <option class="option-list" value selected="selected">EN</option>
+                    <option class="option-list" value="">KO</option>
+                </select>
+                <!--<li><i class="bi bi-translate"></i><button type="checkbox"></i>ENGLISH</button></li>-->
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- 메뉴-->
+    <!-- <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.01s" data-wow-delay="0s">-->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                    <img class="head-logo" src="../img/logo.png" alt="#">
+                    </a>
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="introduction.html">Introduction</a></li>
+                        <li class="scroll-to-section" id="item"><a href="map.html">Recommendation</a></li>
+                        <li class="scroll-to-section"><a href="drink.ejs">Drinks</a></li>
+                        <li class="scroll-to-section"><a href="community.ejs">Community</a></li>
+                        <!--<li class="scroll-to-section"><a href="#Review">Review</a></li>-->
+                        <!--<li class="scroll-to-section"><div class="border-first-button"><a href="#contact">Free Quote</a></div></li> -->
+                    </ul>
+                    <a class='menu-trigger'>
+                    <span>Menu</span>
+                    </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
     <!---------------------------------- 게시글 상세보기 모달창 ---------------------------------->
     <div id="myModal" class="modal">
         <div class="modal-main">
@@ -57,20 +128,128 @@
 
     <!-- 메뉴 -->
     <div data-include-path="header.html"></div>
-
-    <div class="predict-result" id="label-container"></div>    
     
     <div class="map-content">
         <div class="map"></div>
-    </div>
+        <div class="map-content-left" id="map-content-left">
+            <input type="checkbox" id="map-content-left-btn">
+            <label for="map-content-left-btn" class="map-cotent-left-btn-ya">
+                <span><i class="bi bi-chevron-left"></i></span>
+            </label>
+            <div class="map-content-left-content">
+                <!-- 결과 -->
+                <div class="predict-result" id="label-container"></div>
+                <div class="map-content-photo"><img src="https://lh5.googleusercontent.com/p/AF1QipNuB4vPM8W9ckzwEifRp0KpccPFLHhqDsUEmuaT=w1080-k-no"></div>
+                <div class="restaurant-title">Recommended restaurants</div>
+                <div class="restaurant">
+                    <input type="checkbox" id="restaurant-content-btn">
+                    <label for="restaurant-content-btn">
+                        <div class="restaurant-content">
+                            <div class="restaurant-content-img"><img src="https://lh5.googleusercontent.com/p/AF1QipNuB4vPM8W9ckzwEifRp0KpccPFLHhqDsUEmuaT=w1080-k-no"></div>
+                            <div class="restaurant-content-restname">나주곰탕하얀집 운암점</div>
+                            <div class="restaurant-content-restaddr">광주 북구 운암동 1051-8</div>
+                            <div>
+                                <div class="restaurant-content-resttel">0507-1336-2762</div>
+                                <div class="restaurant-content-restscore">4.4</div>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="restaurant-content-detail">
+                        <div class="restaurant-content-img"><img src="https://lh5.googleusercontent.com/p/AF1QipNuB4vPM8W9ckzwEifRp0KpccPFLHhqDsUEmuaT=w1080-k-no"></div>
+                        <div class="tag-content">
+                            <input type="radio" name="tabmenu" id="tab01" checked>
+                            <label for="tab01">홈</label>
+                            <input type="radio" name="tabmenu" id="tab02">
+                            <label for="tab02">메뉴</label>
+                            <input type="radio" name="tabmenu" id="tab03">
+                            <label for="tab03">리뷰</label>
 
-    <!-- footer -->
-    <div data-include-path="footer.html"></div>
+                            <div class="conbox con1">
+                                <div class="restaurant-content-name">나주곰탕하얀집 운암점</div>
+                                <div class="restaurant-content-addr">
+                                    <i class="bi bi-shop"></i>
+                                    <span>광주 북구 운암동 1051-8</span>
+                                </div>
+                                <div class="restaurant-content-tel">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>0507-1336-2762</span>
+                                </div>
+                                <div class="restaurant-content-time">
+                                    <i class="bi bi-clock"></i>
+                                    <span>10:00 - 21:00</span>
+                                </div>
+                                <div class="restaurant-content-score">
+                                    <i class="bi bi-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                            <div class="conbox con2">
+                                <div class="menu">
+                                    <div class="menu1">Beef Bone Soup
+                                        <span>9000원</span>
+                                    </div>
+                                    <div class="menu2">Boiled Beef/Pork Slices
+                                        <span>12000원</span>   
+                                    </div>
+                                    <div class="menu3">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conbox con3">
+                                <div class="review">
+                                    <div class="review-score">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                        <span>4.4</span>
+                                    </div>
+                                    <div class="review-write"><span>review write </span><button>write</button></div>
+                                    <div class="review-content">
+                                        <div class="review-content1">
+                                            <img src="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 두번째.. 반복해야하는데 보여주기 식이니까 일단 만듬 -->
+                    <div class="restaurant-content">
+                        <div class="restaurant-content-img"><img src="https://fastly.4sqi.net/img/general/600x600/46722351_-CbaVeAkfxznh-nszMhETBbvRn6C7muWDx1lAp6Nlg8.jpg"></div>
+                        <div class="restaurant-content-restname">새물 문흥골 곰탕</div>
+                        <div class="restaurant-content-restaddr">광주 북구 문흥동 257-17</div>
+                        <div>
+                            <div class="restaurant-content-resttel">062-267-2133</div>
+                            <div class="restaurant-content-restscore">4.3</div>
+                        </div>
+                    </div>
+                    <div class="restaurant-content">
+                        <div class="restaurant-content-img"><img src="https://t1.daumcdn.net/cfile/tistory/245FC73653C5F88814"></div>
+                        <div class="restaurant-content-restname">오복식당</div>
+                        <div class="restaurant-content-restaddr">광주 동구 산수동 522-8</div>
+                        <div>
+                            <div class="restaurant-content-resttel">062-223-1579</div>
+                            <div class="restaurant-content-restscore">4.0</div>
+                        </div>
+                    </div>
+                    <div class="restaurant-content">
+                        <div class="restaurant-content-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg8aRARq5Cc57Zic3rF3_hT0yolZlN4zgU4Q&usqp=CAU"></div>
+                        <div class="restaurant-content-restname">본가나주곰탕</div>
+                        <div class="restaurant-content-restaddr">광주 북구 일곡동 876-3</div>
+                        <div>
+                            <div class="restaurant-content-resttel">062-571-0180</div>
+                            <div class="restaurant-content-restscore">4.3</div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
 
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/index.js" defer type="text/javascript"></script>
-    <script src="../js/header-footer.js" defer type="text/javascript"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/animation.js"></script>
     <script src="../js/imagesloaded.js"></script>
